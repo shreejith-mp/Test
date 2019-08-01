@@ -11,6 +11,13 @@ setInterval(function() {
   imgElem.src = 'images/' + randomChoice + '.jpg';
 }, 2000)
 
+// Register service worker to control making site work offline
+
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('sw.js')
+           .then(function() { console.log('Service Worker Registered'); });
+}
 
 // Code to handle install prompt on desktop
 
