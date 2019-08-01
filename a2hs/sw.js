@@ -4,6 +4,7 @@ self.addEventListener('install', function(e) {
      return cache.addAll([
       '/',
         '/index.html`,
+        '/index.js`,
         '/styles/main.css`,
         '/images/fox1.jpg',
          '/images/fox2.jpg'
