@@ -7,7 +7,6 @@ self.addEventListener('install', function(e) {
       '/',
         '/index.html',
         '/styles/main.css',
-       '/index.js',
         '/images/fox1.jpg',
          '/images/fox2.jpg',
          '/images/fox3.jpg',
