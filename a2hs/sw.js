@@ -4,9 +4,9 @@ self.addEventListener('install', function(e) {
    caches.open('video_store').then(function(cache) {
      return cache.addAll([
        '/',
-       'index.html',
-       'index.js',
-       'style.css',
+       '/index.html',
+       '/index.js',
+       '/style.css',
        '/images/fox1.jpg',
        '/images/fox2.jpg',
        '/images/fox3.jpg',
