@@ -1,4 +1,6 @@
+console.log("fdfd :"+self);
 self.addEventListener('install', function(e) {
+ console.log("e :"+e);
  e.waitUntil(
    caches.open('video-store').then(function(cache) {
      return cache.addAll([
