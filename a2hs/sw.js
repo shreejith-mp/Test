@@ -5,12 +5,13 @@ self.addEventListener('install', function(e) {
    caches.open('video-store').then(function(cache) {
      return cache.addAll([
       '/',
-        '/index.html',
-        '/styles/main.css',
-        '/images/fox1.jpg',
-         '/images/fox2.jpg',
-         '/images/fox3.jpg',
-          '/images/fox4.jpg']);
+        '/Test/a2hs/index.html',
+        '/Test/a2hs/index.js'
+        '/Test/a2hs/styles/main.css',
+        '/Test/a2hs/images/fox1.jpg',
+         '/Test/a2hs/images/fox2.jpg',
+         '/Test/a2hs/images/fox3.jpg',
+          '/Test/a2hs/images/fox4.jpg']);
    })
  );
 });
