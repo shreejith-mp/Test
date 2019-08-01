@@ -15,6 +15,7 @@ setInterval(function() {
 
 let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
+console.log("addBtn :"+addBtn);
 addBtn.style.display = 'none';
 
 window.addEventListener('beforeinstallprompt', (e) => {
@@ -29,7 +30,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
     // hide our user interface that shows our A2HS button
     addBtn.style.display = 'none';
     // Show the prompt
-    console.log("e :", e);
+    console.log("e :"+e);
     e.prompt();
     // Wait for the user to respond to the prompt
     e.userChoice.then((choiceResult) => {
