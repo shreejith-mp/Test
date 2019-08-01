@@ -27,13 +27,13 @@ window.addEventListener('beforeinstallprompt', (e) => {
   addBtn.style.display = 'block';
 
   addBtn.addEventListener('click', (e) => {
+    console.log("e :"+e);
     // hide our user interface that shows our A2HS button
     addBtn.style.display = 'none';
     // Show the prompt
-    console.log("e :"+e);
-    e.prompt();
+    deferredPrompt .prompt();
     // Wait for the user to respond to the prompt
-    e.userChoice.then((choiceResult) => {
+    deferredPrompt .userChoice.then((choiceResult) => {
         if (choiceResult.outcome === 'accepted') {
           console.log('User accepted the A2HS prompt');
         } else {
