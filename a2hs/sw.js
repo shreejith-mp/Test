@@ -4,7 +4,6 @@ self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('video-store').then(function(cache) {
      return cache.addAll([
-      '/',
       '/Test/',
         '/Test/a2hs/index.html',
         '/Test/a2hs/index.js',
