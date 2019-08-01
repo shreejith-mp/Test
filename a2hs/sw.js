@@ -40,4 +40,4 @@ addEventListener('fetch', function(event) {
         }
       })
   );
-});  
+}); 
