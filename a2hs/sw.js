@@ -1,6 +1,7 @@
+var video_store = 'video-store';
 self.addEventListener('install', function(e) {
  e.waitUntil(
-   caches.open('video-store').then(function(cache) {
+   caches.open('video_store').then(function(cache) {
      return cache.addAll([
        '/pwa-examples/a2hs/',
        '/pwa-examples/a2hs/index.html',
